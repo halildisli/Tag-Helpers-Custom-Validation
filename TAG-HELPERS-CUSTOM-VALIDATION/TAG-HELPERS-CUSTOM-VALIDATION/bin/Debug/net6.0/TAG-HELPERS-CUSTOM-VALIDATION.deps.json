@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "TAG-HELPERS-CUSTOM-VALIDATION/1.0.0": {
+        "runtime": {
+          "TAG-HELPERS-CUSTOM-VALIDATION.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TAG-HELPERS-CUSTOM-VALIDATION/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

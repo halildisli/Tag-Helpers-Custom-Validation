@@ -1,0 +1,58 @@
+﻿@model Employee
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Add Employee";
+}
+
+<h1>Add Employee</h1>
+
+<div>
+    <form asp-action="AddEmployee">
+        <div>
+            <label class="form-label" asp-for="Id"></label>
+            <input class="form-control mb-2" asp-for="Id" placeholder="Employee Id" />
+        </div>
+        <div>
+            <label class="form-label" asp-for="FirstName"></label>
+            <input class="form-control mb-2" asp-for="FirstName" placeholder="First Name" />
+        </div>
+        <div>
+            <label class="form-label" asp-for="LastName"></label>
+            <input class="form-control mb-2" asp-for="LastName" placeholder="Last Name" />
+        </div>
+        <div>
+            <label class="form-label" asp-for="Email"></label>
+            <input class="form-control mb-2" asp-for="Email" placeholder="Email" />
+        </div>
+        <div>
+            <label class="form-label" asp-for="Address"></label>
+            <input class="form-control mb-2" asp-for="Address" placeholder="Address" />
+        </div>
+        <div>
+            <label class="form-label" asp-for="PhoneNumber"></label>
+            <input class="form-control mb-2" asp-for="PhoneNumber" placeholder="Phone Number" />
+        </div>
+        <div>
+            <label class="form-label" asp-for="BirthDate"></label>
+            <input class="form-control mb-2" asp-for="BirthDate" placeholder="BirthDate" />
+        </div>
+        <div>
+            <label class="form-label" asp-for="DateOfStart"></label>
+            <input class="form-control mb-2" asp-for="DateOfStart" placeholder="Start Date Of Job" />
+        </div>
+        <div>
+            <label class="form-label" asp-for="DateOfEnd"></label>
+            <input class="form-control mb-2" asp-for="DateOfEnd" placeholder="End Date Of Job" />
+        </div>
+        <div>
+            <label class="form-label" asp-for="TypeOfEmployee"></label>
+            <select class="dropdown-menu-start ms-3 " asp-for="TypeOfEmployee" asp-items="@(Html.GetEnumSelectList<EmployeeType>())"> </select>
+        </div>
+
+        <div>
+            <input class="mt-4 btn-success p-2" type="submit" value="AddEmployee" />
+        </div>
+        <div class="mt-5 text-danger text-capitalize" asp-validation-summary="All"></div>
+    </form>
+</div>
+

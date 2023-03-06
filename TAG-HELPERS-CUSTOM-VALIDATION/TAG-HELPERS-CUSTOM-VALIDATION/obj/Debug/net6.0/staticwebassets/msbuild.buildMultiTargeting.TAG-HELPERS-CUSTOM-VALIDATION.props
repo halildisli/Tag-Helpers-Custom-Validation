@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TAG-HELPERS-CUSTOM-VALIDATION.props" />
+</Project>
